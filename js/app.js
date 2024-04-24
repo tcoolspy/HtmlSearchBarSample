@@ -24,7 +24,9 @@ function search(e) {
 function showSuggestions(results, inputVal) {
   for (let result of results) {
     var li = document.createElement("li");
-    li.style.border = "1px solid black";
+    li.style.border = "1px solid #ababab";
+    li.style.borderRadius = "10px";
+    li.style.padding = "5px";
     li.addEventListener("click", useSuggestions);  // NOTE: I'm adding an event listener on each list item.
     li.appendChild(document.createTextNode(result));
     suggestions.appendChild(li);
